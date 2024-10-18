@@ -9,8 +9,8 @@ import lombok.Setter;
 import java.util.UUID;
 
 @Data
-//@NoArgsConstructor
-//@AllArgsConstructor
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
 public class ProductEntity {
@@ -20,7 +20,7 @@ public class ProductEntity {
     private double price;
     private int stock;
 
-    public ProductEntity(UUID id, String name, String category, double price, int stock) {
+    /*public ProductEntity(UUID id, String name, String category, double price, int stock) {
         this.id = id;
         this.name = name;
         this.category = category;
@@ -66,5 +66,5 @@ public class ProductEntity {
 
     public void setStock(int stock) {
         this.stock = stock;
-    }
+    }*/
 }
